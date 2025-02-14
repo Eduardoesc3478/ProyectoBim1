@@ -7,8 +7,7 @@ import morgan from "morgan";
 import { dbConnection } from "./mongo.js";
 import authRoutes from "../src/auth/auth.routes.js";
 import userRoutes from "../src/user/user.routes.js";
-import petRoutes from "../src/pet/pet.routes.js";
-import appointmentRoutes from "../src/appointment/appointment.routes.js";
+
 import apiLimiter from "../src/middlewares/rate-limit-validator.js";
 import { swaggerDocs, swaggerUi } from "./swagger.js";
 
@@ -24,8 +23,6 @@ const middlewares = (app) => {
 const routes = (app) => {
     app.use("/onlineShop/v1/auth", authRoutes);
     app.use("/onlineShop/v1/user", userRoutes);
-    app.use("/adoptionSystem/v1/pet", petRoutes);
-    app.use("/adoptionSystem/v1/appointment", appointmentRoutes);
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 };
 
