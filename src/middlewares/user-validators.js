@@ -56,7 +56,7 @@ export const updateUserValidator = [
 
 export const updateRoleValidator = [
     validateJWT,
-    hasRoles("ADMIN_ROLE"),
+    hasRoles("ADMIN_ROLE", "USER_ROLE"),
     param("uid").isMongoId().withMessage("No es un ID válido de MongoDB"),
     param("uid").custom(userExists),
     body("newRole")
@@ -65,5 +65,7 @@ export const updateRoleValidator = [
     validarCampos,
     handleErrors
 ];
+
+
 
 
