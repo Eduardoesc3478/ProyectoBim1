@@ -1,10 +1,6 @@
-import { hash, verify } from "argon2";
-import User from "./user.model.js";
-import fs from "fs/promises";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+import User from "./user.model.js";
+
 
 export const getUsers = async (req, res) => {
     try {
