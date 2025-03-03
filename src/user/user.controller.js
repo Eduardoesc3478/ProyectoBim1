@@ -6,9 +6,6 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-
-
-
 export const getUsers = async (req, res) => {
     try {
         const { limite = 5, desde = 0 } = req.query;
@@ -55,7 +52,6 @@ export const deleteUser = async (req, res) => {
     }
 };
 
-
 export const updateUser = async (req, res) => {
     try {
         const { uid } = req.params;
@@ -77,14 +73,11 @@ export const updateUser = async (req, res) => {
     }
 };
 
-
-
 export const updateRole = async (req, res) => {
     try {
         const { uid } = req.params;
         const { newRole } = req.body;
 
-        
         const user = await User.findById(uid);
         if (!user) {
             return res.status(404).json({
@@ -93,7 +86,6 @@ export const updateRole = async (req, res) => {
             });
         }
 
-        
         if (user.role === newRole) {
             return res.status(400).json({
                 success: false,
@@ -101,7 +93,6 @@ export const updateRole = async (req, res) => {
             });
         }
 
-        
         const validRoles = ["ADMIN_ROLE", "CLIENT_ROLE"];
         if (!validRoles.includes(newRole)) {
             return res.status(400).json({
@@ -110,7 +101,6 @@ export const updateRole = async (req, res) => {
             });
         }
 
-        
         await User.findByIdAndUpdate(uid, { role: newRole }, { new: true });
 
         return res.status(200).json({
