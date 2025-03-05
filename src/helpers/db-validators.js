@@ -29,7 +29,7 @@ export const categoryExists = async (id = " ") => {
     const existe = await Category.findById(id)
     console.log(existe)
     if(!existe){
-        throw new Error("No existe el usuario con el ID proporcionado")
+        throw new Error("No existe la categoria con el ID proporcionado")
     }
 }
 
@@ -37,7 +37,7 @@ export const productExists = async (id = " ") => {
     const existe = await Product.findById(id)
     console.log(existe)
     if(!existe){
-        throw new Error("No existe el usuario con el ID proporcionado")
+        throw new Error("No existe el producto con el ID proporcionado")
     }
 }
 
