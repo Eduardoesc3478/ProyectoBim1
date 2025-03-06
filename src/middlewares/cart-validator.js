@@ -27,3 +27,15 @@ export const purchaseCartValidator = [
     validarCampos,
     handleErrors
 ];
+
+export const deleteProductValidator = [
+    validateJWT,
+    hasRoles("CLIENT_ROLE", "ADMIN_ROLE"),
+    param("userId").custom(userExists),
+    param("userId").isMongoId().withMessage("No es un ID válido de MongoDB"),
+    body("productId").notEmpty().withMessage("El ID del producto es requerido"),
+    body("productId").isMongoId().withMessage("No es un ID válido de MongoDB"),
+    body("productId").custom(productExists),
+    validarCampos,
+    handleErrors
+];
