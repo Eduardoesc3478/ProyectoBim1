@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "67c3c60074856467719e603d"
+  },
+  "name": "Electronics",
+  "description": "Devices and gadgets",
+  "status": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c658c842d3afebb87c6843"
+  },
+  "name": "Electronica",
+  "description": "Cosas de electronica",
+  "status": true,
+  "__v": 0
+}]
