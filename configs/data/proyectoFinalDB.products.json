@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "67c65ea1423f1d777990628d"
+  },
+  "name": "Headphones",
+  "description": "Noise-cancelling headphones",
+  "price": 200,
+  "stock": 175,
+  "category": {
+    "$oid": "67c658c842d3afebb87c6843"
+  },
+  "status": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c65eed423f1d7779906290"
+  },
+  "name": "Smartphone",
+  "description": "Latest model smartphone",
+  "price": 800,
+  "stock": 30,
+  "category": {
+    "$oid": "67c658c842d3afebb87c6843"
+  },
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c65f04423f1d7779906293"
+  },
+  "name": "Headphones",
+  "description": "Noise-cancelling headphones",
+  "price": 200,
+  "stock": 73,
+  "category": {
+    "$oid": "67c658c842d3afebb87c6843"
+  },
+  "status": true,
+  "__v": 0
+}]

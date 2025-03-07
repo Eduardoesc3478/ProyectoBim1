@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "67c3bd5732cd5a8f29d89856"
+  },
+  "name": "Johnie",
+  "surname": "Doeysss",
+  "username": "johniedoey",
+  "email": "johndoe@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$SKfuo3JO4Z52l2bDSPGOpg$13GQIArgx8yp0uFMWf2JO80+5am/DN6Fw+l3jlm5Zsk",
+  "phone": "12345679",
+  "role": "ADMIN_ROLE",
+  "status": false
+},
+{
+  "_id": {
+    "$oid": "67c3bdb132cd5a8f29d8985c"
+  },
+  "name": "Jane",
+  "surname": "Smith",
+  "username": "janesmith",
+  "email": "janesmith@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$F2QoAvqcHyKEIdkImU846g$JNC5uYhLfzlohlKk0kGR8C4dptrbfG8tq0LBrsG1zTw",
+  "phone": "87654321",
+  "role": "ADMIN_ROLE",
+  "status": true
+}]
