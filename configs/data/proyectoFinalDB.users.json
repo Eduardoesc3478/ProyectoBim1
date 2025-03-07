@@ -23,4 +23,17 @@
   "phone": "87654321",
   "role": "ADMIN_ROLE",
   "status": true
+},
+{
+  "_id": {
+    "$oid": "67cb0386bafefbceea2720aa"
+  },
+  "name": "Daniel",
+  "surname": "Sanchez",
+  "username": "DanielSanch",
+  "email": "DanielSanch@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$jrVJwkV+iehBBUrh8MgQQA$Gkx6uCNyEyxhaxF+BWOrloPjAFqmP5LS4epH1pItZW4",
+  "phone": "87654321",
+  "role": "CLIENT_ROLE",
+  "status": true
 }]

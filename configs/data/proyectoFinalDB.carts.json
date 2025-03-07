@@ -6,5 +6,15 @@
     "$oid": "67c3bdb132cd5a8f29d8985c"
   },
   "products": [],
-  "__v": 12
+  "__v": 14
+},
+{
+  "_id": {
+    "$oid": "67cb0eaa091866397a1abcc6"
+  },
+  "userId": {
+    "$oid": "67cb0386bafefbceea2720aa"
+  },
+  "products": [],
+  "__v": 3
 }]

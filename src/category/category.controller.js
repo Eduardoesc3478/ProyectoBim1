@@ -121,3 +121,25 @@ export const deleteCategory = async (req, res) => {
         });
     }
 }
+
+
+
+export const categoriaPorDefecto = async () => {
+    try {
+        const categoriaPorDefecto = await Category.findOne({ name: "Categoria por defecto" });
+
+        if (!categoriaPorDefecto) {
+            const catDefec = {
+                name: "Categoria por defecto",
+                description: "Categoria por defecto ",
+                status: true
+            };
+            await Category.create(catDefec);
+            console.log("Categoria por defecto creada exitosamente");
+        } else {
+            console.log("La categoria por defecto ya existe");
+        }
+    } catch (err) {
+        console.error("Error al crear la categoria por defecto:", err.message);
+    }
+};

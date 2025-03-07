@@ -12,6 +12,7 @@ export const getUsers = async (req, res) => {
             User.find(query)
                 .skip(Number(desde))
                 .limit(Number(limite))
+                .populate("purchaseHistory")
         ]);
 
         return res.status(200).json({

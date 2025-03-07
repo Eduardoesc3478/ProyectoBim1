@@ -32,4 +32,74 @@
     "$date": "2025-03-07T02:56:20.895Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0269bafefbceea2720a4"
+  },
+  "userId": {
+    "$oid": "67c3bdb132cd5a8f29d8985c"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "67c65eed423f1d7779906290"
+      },
+      "quantity": 2,
+      "price": 800,
+      "_id": {
+        "$oid": "67cb0269bafefbceea2720a5"
+      }
+    }
+  ],
+  "total": 1600,
+  "createdAt": {
+    "$date": "2025-03-07T14:27:53.879Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0f1d091866397a1abce5"
+  },
+  "userId": {
+    "$oid": "67cb0386bafefbceea2720aa"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "67cb0b07091866397a1abcaf"
+      },
+      "quantity": 2,
+      "price": 1300,
+      "_id": {
+        "$oid": "67cb0f1d091866397a1abce6"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67cb0b2c091866397a1abcb2"
+      },
+      "quantity": 1,
+      "price": 1000,
+      "_id": {
+        "$oid": "67cb0f1d091866397a1abce7"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "67c65f04423f1d7779906293"
+      },
+      "quantity": 1,
+      "price": 200,
+      "_id": {
+        "$oid": "67cb0f1d091866397a1abce8"
+      }
+    }
+  ],
+  "total": 3800,
+  "createdAt": {
+    "$date": "2025-03-07T15:22:05.360Z"
+  },
+  "__v": 0
 }]

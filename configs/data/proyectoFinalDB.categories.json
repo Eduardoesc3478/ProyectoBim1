@@ -15,4 +15,31 @@
   "description": "Cosas de electronica",
   "status": true,
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0a403bd4294b0721d4fa"
+  },
+  "name": "Muebles",
+  "description": "Cosas de muebleria",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0a60091866397a1abca7"
+  },
+  "name": "Limpieza",
+  "description": "Cosas de limpieza",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0a7b091866397a1abca9"
+  },
+  "name": "Ricitos",
+  "description": "Cosas de comer",
+  "status": true,
+  "__v": 0
 }]

@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Jane\",\r\n  \"surname\": \"Smith\",\r\n  \"username\": \"janesmith\",\r\n  \"email\": \"janesmith@example.com\",\r\n  \"password\": \"@nothersecur3pAssword\",\r\n  \"phone\": \"87654321\",\r\n  \"role\": \"ADMIN_ROLE\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Daniel\",\r\n  \"surname\": \"Sanchez\",\r\n  \"username\": \"DanielSanch\",\r\n  \"email\": \"DanielSanch@example.com\",\r\n  \"password\": \"@nothersecur3pAssword\",\r\n  \"phone\": \"87654321\"\r\n  \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -47,7 +47,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"username\": \"janesmith\",\r\n  \"password\": \"@nothersecur3pAssword\"\r\n}",
+							"raw": "{\r\n  \"username\": \"DanielSanch\",\r\n  \"password\": \"@nothersecur3pAssword\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -237,7 +237,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Electronica\",\r\n  \"description\": \"Cosas de electronica\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Ricitos\",\r\n  \"description\": \"Cosas de comer\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -351,7 +351,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MzYmRiMTMyY2Q1YThmMjlkODk4NWMiLCJpYXQiOjE3NDEwNTM1NzIsImV4cCI6MTc0MTA1NzE3Mn0.sShRnctn_K7jVFzgBPhafNOy9Qvs90P5Gnmt27ygUvo",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MzYmRiMTMyY2Q1YThmMjlkODk4NWMiLCJpYXQiOjE3NDEzNTk4NjAsImV4cCI6MTc0MTM2MzQ2MH0.fMSdRE4uHkHkqU-GWe9PWb54rb2nbl9HYtyqns8ZZjc",
 									"type": "string"
 								}
 							]
@@ -360,7 +360,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Headphones\",\r\n  \"description\": \"Noise-cancelling headphones\",\r\n  \"price\": 200,\r\n  \"stock\": 75,\r\n  \"category\": \"67c658c842d3afebb87c6843\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Doritos\",\r\n  \"description\": \"verde, rojo y de queso\",\r\n  \"price\": 10,\r\n  \"stock\": 600,\r\n  \"category\": \"67cb0a7b091866397a1abca9\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -526,7 +526,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MzYmRiMTMyY2Q1YThmMjlkODk4NWMiLCJpYXQiOjE3NDEzMTYwOTAsImV4cCI6MTc0MTMxOTY5MH0.-iBTCU1KT5Mcu4MEqMDt7ZjCvQbRpOJ5kWs1WKDGEIc",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiMDM4NmJhZmVmYmNlZWEyNzIwYWEiLCJpYXQiOjE3NDEzNjA3NjIsImV4cCI6MTc0MTM2NDM2Mn0.E_Tm9ye2ZfWEium7emNuWeFHBKkThuEIbaN22qBMTnM",
 									"type": "string"
 								}
 							]
@@ -535,7 +535,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"productId\": \"67c65eed423f1d7779906290\",\r\n  \"quantity\": 2\r\n}",
+							"raw": "{\r\n  \"productId\": \"67c65f04423f1d7779906293\",\r\n  \"quantity\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -543,7 +543,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/onlineShop/v1/cart/addtoCart/67c3bdb132cd5a8f29d8985c",
+							"raw": "http://localhost:3001/onlineShop/v1/cart/addtoCart/67cb0386bafefbceea2720aa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -554,7 +554,7 @@
 								"v1",
 								"cart",
 								"addtoCart",
-								"67c3bdb132cd5a8f29d8985c"
+								"67cb0386bafefbceea2720aa"
 							]
 						}
 					},
@@ -568,7 +568,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MzYmRiMTMyY2Q1YThmMjlkODk4NWMiLCJpYXQiOjE3NDEzMTYwOTAsImV4cCI6MTc0MTMxOTY5MH0.-iBTCU1KT5Mcu4MEqMDt7ZjCvQbRpOJ5kWs1WKDGEIc",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2NiMDM4NmJhZmVmYmNlZWEyNzIwYWEiLCJpYXQiOjE3NDEzNjA3NjIsImV4cCI6MTc0MTM2NDM2Mn0.E_Tm9ye2ZfWEium7emNuWeFHBKkThuEIbaN22qBMTnM",
 									"type": "string"
 								}
 							]
@@ -576,7 +576,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/onlineShop/v1/cart/purchaseCart/67c3bdb132cd5a8f29d8985c",
+							"raw": "http://localhost:3001/onlineShop/v1/cart/purchaseCart/67cb0386bafefbceea2720aa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -587,7 +587,7 @@
 								"v1",
 								"cart",
 								"purchaseCart",
-								"67c3bdb132cd5a8f29d8985c"
+								"67cb0386bafefbceea2720aa"
 							]
 						}
 					},
@@ -618,7 +618,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/onlineShop/v1/cart/deleteProduct/67c3bdb132cd5a8f29d8985c",
+							"raw": "http://localhost:3001/onlineShop/v1/cart/deleteProduct/67cb0386bafefbceea2720aa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -629,7 +629,7 @@
 								"v1",
 								"cart",
 								"deleteProduct",
-								"67c3bdb132cd5a8f29d8985c"
+								"67cb0386bafefbceea2720aa"
 							]
 						}
 					},
@@ -641,7 +641,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/onlineShop/v1/cart/getCart/67c3bdb132cd5a8f29d8985c",
+							"raw": "http://localhost:3001/onlineShop/v1/cart/getCart/67cb0386bafefbceea2720aa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -652,7 +652,7 @@
 								"v1",
 								"cart",
 								"getCart",
-								"67c3bdb132cd5a8f29d8985c"
+								"67cb0386bafefbceea2720aa"
 							]
 						}
 					},

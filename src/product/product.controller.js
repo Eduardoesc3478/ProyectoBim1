@@ -11,6 +11,18 @@ export const addProduct = async (req, res) => {
             stock: data.stock,
             category: data.category
         });
+        
+        if (!data.category) {
+            const defaultCategory = await Category.findOne({ name: "Categoria por defecto" });
+            if (!defaultCategory) {
+                return res.status(500).json({
+                    success: false,
+                    message: 'No se encontró la categoría por defecto'
+                });
+            }
+            data.category = defaultCategory._id;
+        }
+
 
         await newProduct.save();
 

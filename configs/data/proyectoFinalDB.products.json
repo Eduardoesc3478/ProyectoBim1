@@ -19,7 +19,7 @@
   "name": "Smartphone",
   "description": "Latest model smartphone",
   "price": 800,
-  "stock": 30,
+  "stock": 28,
   "category": {
     "$oid": "67c658c842d3afebb87c6843"
   },
@@ -33,9 +33,93 @@
   "name": "Headphones",
   "description": "Noise-cancelling headphones",
   "price": 200,
-  "stock": 73,
+  "stock": 72,
   "category": {
     "$oid": "67c658c842d3afebb87c6843"
+  },
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0b07091866397a1abcaf"
+  },
+  "name": "Sofa",
+  "description": "muy comodo",
+  "price": 1300,
+  "stock": 88,
+  "category": {
+    "$oid": "67cb0a403bd4294b0721d4fa"
+  },
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0b2c091866397a1abcb2"
+  },
+  "name": "Cama",
+  "description": "muy comodo",
+  "price": 1000,
+  "stock": 59,
+  "category": {
+    "$oid": "67cb0a403bd4294b0721d4fa"
+  },
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0b6a091866397a1abcb5"
+  },
+  "name": "Cloro",
+  "description": "para desinfectar zonas",
+  "price": 35,
+  "stock": 600,
+  "category": {
+    "$oid": "67cb0a60091866397a1abca7"
+  },
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0bc7091866397a1abcb8"
+  },
+  "name": "Asistin",
+  "description": "deja un rico olor",
+  "price": 40,
+  "stock": 600,
+  "category": {
+    "$oid": "67cb0a60091866397a1abca7"
+  },
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0d62091866397a1abcbb"
+  },
+  "name": "Lays",
+  "description": "de queso, original, etc.",
+  "price": 40,
+  "stock": 600,
+  "category": {
+    "$oid": "67cb0a7b091866397a1abca9"
+  },
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67cb0dd5091866397a1abcbe"
+  },
+  "name": "Doritos",
+  "description": "verde, rojo y de queso",
+  "price": 10,
+  "stock": 600,
+  "category": {
+    "$oid": "67cb0a7b091866397a1abca9"
   },
   "status": true,
   "__v": 0

@@ -37,6 +37,11 @@ const userSchema = Schema({
         enum: ["ADMIN_ROLE", "CLIENT_ROLE"],
         default : "CLIENT_ROLE"
     },
+    purchaseHistory:{
+        type: Schema.Types.ObjectId,
+        ref: "invoice",
+        required: false
+    },
     status:{
         type: Boolean,
         default: true

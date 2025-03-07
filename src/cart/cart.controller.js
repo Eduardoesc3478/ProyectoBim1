@@ -108,31 +108,61 @@ export const purchaseCart = async (req, res) => {
         cart.products = [];
         await cart.save();
 
-        // Verificar y crear la carpeta invoices si no existe
+        
         const invoicesDir = path.join(__dirname, '../../public/docs');
         if (!fs.existsSync(invoicesDir)) {
             fs.mkdirSync(invoicesDir);
         }
 
-        // Generar PDF de la factura
+        
         const doc = new PDFDocument();
+
         const invoicePath = path.join(invoicesDir, `invoice-${invoice._id}.pdf`);
-
         doc.pipe(fs.createWriteStream(invoicePath));
-
-        doc.fontSize(25).text('Factura', { align: 'center' });
+        
+        // Diseño de la cabecera
+        doc.fontSize(30).font('Helvetica-Bold').text('Factura', { align: 'center' });
         doc.moveDown();
-        doc.fontSize(18).text(`Usuario: ${userId}`);
-        doc.fontSize(18).text(`Fecha: ${new Date().toLocaleDateString()}`);
+        
+        // Línea de separación
+        doc.moveTo(50, doc.y).lineTo(550, doc.y).stroke();
+        
+        // Información del usuario y fecha
+        doc.fontSize(16).font('Helvetica').text(`Usuario: ${userId}`, { align: 'left' });
+        doc.text(`Fecha: ${new Date().toLocaleDateString()}`, { align: 'right' });
         doc.moveDown();
-        doc.fontSize(15).text('Productos:');
+        
+        // Línea de separación
+        doc.moveTo(50, doc.y).lineTo(550, doc.y).stroke();
+        doc.moveDown();
+        
+        // Título de productos
+        doc.fontSize(18).font('Helvetica-Bold').text('Productos:', { underline: true });
+        doc.moveDown();
+        
+        // Detalles de los productos
         invoiceProducts.forEach((item, index) => {
-            doc.fontSize(12).text(`${index + 1}. Producto ID: ${item.productId}, Cantidad: ${item.quantity}, Precio: $${item.price}`);
+            doc.fontSize(12).text(
+                `${index + 1}. Producto ID: ${item.productId}, Cantidad: ${item.quantity}, Precio: $${item.price}`,
+                { align: 'left' }
+            );
+            doc.moveDown();
         });
+        
+        // Línea de separación antes del total
+        doc.moveTo(50, doc.y).lineTo(550, doc.y).stroke();
         doc.moveDown();
-        doc.fontSize(18).text(`Total: $${total}`, { align: 'right' });
-
+        
+        // Total
+        doc.fontSize(18).font('Helvetica-Bold').text(`Total: $${total}`, { align: 'right' });
+        
+        // Firma o mensaje adicional
+        doc.moveDown();
+        doc.fontSize(14).text('Gracias por tu compra!', { align: 'center' });
+        
+        // Finaliza el documento
         doc.end();
+        
 
         return res.status(200).json({
             success: true,
@@ -217,4 +247,6 @@ export const getCartByUser = async (req, res) => {
         });
     }
 };
+
+
 
